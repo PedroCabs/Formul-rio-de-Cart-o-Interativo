@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+    <div class="card">
+      <div class="front_card">
+        <img src="images/card-logo.svg" alt="" />
+        <span class="numb" id="numberFront">0000 0000 0000 0000</span>
+        <div class="name_numb">
+          <span class="nameD" id="nameFront">Jane Appleseed</span>
+          <div class="MY">
+          <span class="nameD" id="month_Front">00</span>
+          <p>/</p>
+          <span id="YY_Front">00</span>
+        </div>
+        </div>
+      </div>
+      <div class="back_card">
+        <span id="numbBack">000</span>
+      </div>
+    </div>
+
+    <div class="card_form">
+      <label for="Name">Cardholder Name</label>
+      <input
+        type="text"
+        name=""
+        class="input"
+        id="nameInput"
+        placeholder="  e.g. Jane Appleseed"
+      />
+      <span class="messerror1"></span>
+
+      <label for="Number">Card Number</label>
+      <input
+        type="text"
+        maxlength="16"
+        name=""
+        class="input"
+        id="numberInput"
+        placeholder="  e.g. 1234 5678 9123 0000"
+      />
+      <span class="messerror2"></span>
+
+
+      <div class="data">
+        <div>
+          <p>Exp. Date (MM/YY)</p>
+          <p>CC</p>
+        </div>
+        <div class="inputs">
+          <input type="text" placeholder="MM" id="monthInput" class="data1"  maxlength="2"/>
+          <span class="messerror1"></span>
+          <input type="text" placeholder="YY" id="yearInput" class="data2" maxlength="2" />
+          
+
+          <input
+            type="text"
+            name=""
+            id="ccInput"
+            placeholder="e.g. 123"
+            class="data3"
+            maxlength="3"
+          />
+          
+          
+        </div>
+        <div>
+        <span class="messerror3"></span>
+        <span class="messerror4"></span>
+      </div>
+      </div>
+
+      <button id="confirm_btn">Confirm</button>
+    </div>
+  </div>
+
+    <!-- Completed state start -->
+    <div class="card_complete">
+      <img src="images/icon-complete.svg" alt="" />
+      <h2>Thank you!</h2>
+      <p>We've added your card details</p>
+      <button id="complete_btn">Continue</button>
+    </div>
+
+   
+  </body>
+  <script src="script.js"></script>
+</html>
