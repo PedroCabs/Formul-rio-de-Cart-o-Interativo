@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box 0px;
+  font-family: Space Grotesk;
+}
+
+body {
+  background-image: url(images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.front_card {
+  background-image: url(images/bg-card-front.png);
+  background-size: 290px 160px;
+  margin-top: 90px;
+  margin-left:4px;
+  width: 290px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+.front_card img {
+  width: 55px;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#YY_Front {
+  font-size: 13px;
+  color: hsl(0, 0%, 100%);
+}
+
+.MY{
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.numb {
+  font-size: 22px;
+  margin-top: 19px;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: hsl(0, 0%, 100%);
+}
+
+.name_numb {
+  display: flex;
+  font-size: 13px;
+  margin-top: -8px;
+  margin-left: 15px;
+  margin-right: 15px;
+  gap: 120px;
+  color: hsl(0, 0%, 100%);
+}
+
+.back_card {
+  background-image: url(images/bg-card-back.png);
+  background-size: 270px 142px;
+  position: absolute;
+  color: hsl(0, 0%, 100%);
+  top: 27px;
+  margin-left: 55px;
+  width: 270px;
+  height: 142px;
+  z-index: -1;
+}
+
+.back_card span {
+  margin-top: 60px;
+  margin-left: 200px;
+}
+
+.card_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 40px;
+  margin-left: 15px;
+  color: hsl(278, 68%, 11%);
+}
+
+.data {
+  display: grid;
+  grid-template-columns: 3;
+  gap: 10px;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#nameInput.error {
+  border: 2px solid hsl(0, 100%, 66%);
+}
+
+#numberInput.error {
+  border: 2px solid hsl(0, 100%, 66%);
+}
+
+#monthInput.error {
+  border: 2px solid hsl(0, 100%, 66%);
+}
+
+#yearInput.error {
+  border: 2px solid hsl(0, 100%, 66%);
+}
+
+#ccInput.error {
+  border: 2px solid hsl(0, 100%, 66%);
+}
+
+.messerror1 {
+  color: hsl(0, 100%, 66%);
+
+  font-size: 18px;
+}
+
+.messerror2 {
+  color: hsl(0, 100%, 66%);
+
+  font-size: 18px;
+}
+.messerror3 {
+  color: hsl(0, 100%, 66%);
+  margin-top: 5px;
+  margin-right: 9px;
+
+  font-size: 18px;
+}
+.messerror4 {
+  color: hsl(0, 100%, 66%);
+
+  font-size: 18px;
+}
+
+div{
+    gap: 19px;
+}
+
+#nameInput {
+  margin-left: 2px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 327px;
+  height: 40px;
+  border-radius: 7px;
+}
+
+#nameInput::placeholder {
+  color: hsl(279, 6%, 55%);
+  font-size: 20px;
+}
+
+#numberInput {
+  margin-left: 2px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 327px;
+  height: 40px;
+  border-radius: 7px;
+}
+
+#numberInput::placeholder {
+  color: hsl(279, 6%, 55%);
+  font-size: 20px;
+}
+
+.data1 {
+  width: 65px;
+  height: 45px;
+  border-radius: 7px;
+}
+
+.data1::placeholder {
+  color: hsl(279, 6%, 55%);
+  font-size: 20px;
+  text-align: center;
+}
+
+.data2 {
+  width: 65px;
+  height: 45px;
+  border-radius: 7px;
+}
+
+.data2::placeholder {
+  color: hsl(279, 6%, 55%);
+  font-size: 20px;
+  text-align: center;
+}
+
+.data3 {
+  width: 100px;
+  height: 45px;
+  border-radius: 7px;
+}
+
+.data3::placeholder {
+  color: hsl(279, 6%, 55%);
+  font-size: 20px;
+  text-align: center;
+}
+
+#confirm_btn {
+  width: 335px;
+  height: 45px;
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.card_complete {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.card_complete img {
+  width: 90px;
+  height: 90px;
+}
+
+.card_complete h2 {
+  font-size: 42px;
+}
+
+.card_complete p {
+  color: hsl(279, 6%, 55%);
+}
+
+#complete_btn {
+  width: 335px;
+  height: 45px;
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 500px){
+    body{
+        background-image: url(images/bg-main-desktop.png);
+        background-repeat: no-repeat;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin-left: 230px;
+        margin-top: 25px;
+      }
+
+      .front_card{
+        margin-top: -20px;
+        background-size: 350px 190px;
+        width: 350px;
+        height: 190px;
+      }
+
+      .back_card{
+        background-size: 350px 190px;
+        width: 350px;
+        height: 190px;
+        top: 315px;
+      }
+
+     .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center ;
+        margin-top: 95px;
+        margin-right: 238px;
+        gap: 330px;
+     }
+
+     .back_card span{
+      margin-top: 85px ;
+      margin-left: 275px;
+     }
+
+     .name_numb{
+        gap: 164px;
+     }
+
+     .numb{
+        font-size: 25px;
+        margin-top: 25px;  
+     }
+
+     .card_complete{
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 610px;
+      margin-top: -81px;
+     }
+}
